@@ -10,7 +10,7 @@
     />
     <meta name="theme-color" content="#0f766e" />
     <link rel="canonical" href="https://sz3577.github.io/nethakase/" />
-    <link rel="stylesheet" href="styles.css?v=readable-4" />
+    <link rel="stylesheet" href="styles.css?v=readable-5" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へすすむ</a>
@@ -34,10 +34,16 @@
           <span class="brand__text">ネットはかせの秘密基地</span>
         </a>
         <nav class="nav" aria-label="サイトメニュー">
-          <a href="index.html" aria-current="page">ホーム</a>
+          <a class="nav__home" href="index.html" aria-current="page" aria-label="ホーム">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 11.5 12 5l8 6.5" />
+              <path d="M6.5 10.5V19h11v-8.5" />
+              <path d="M10 19v-5h4v5" />
+            </svg>
+          </a>
           <a href="kids/index.html">こどもはこちら</a>
           <a href="parents/index.html">おとなはこちら</a>
-          <a href="about.html">サイトについて</a>
+          <a class="nav__about" href="about.html">サイトについて</a>
         </nav>
       </div>
     </header>

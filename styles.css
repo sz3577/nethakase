@@ -96,12 +96,12 @@ rt {
 
 .site-header__inner {
   width: min(1120px, calc(100% - 32px));
-  min-height: 74px;
+  min-height: 54px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  justify-content: flex-start;
+  gap: 14px;
 }
 
 .brand {
@@ -114,8 +114,8 @@ rt {
 }
 
 .brand__mark {
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
   display: grid;
   place-items: center;
   border: 2px solid rgba(15, 118, 110, 0.25);
@@ -124,7 +124,7 @@ rt {
 }
 
 .brand__mark svg {
-  width: 29px;
+  width: 24px;
 }
 
 .brand__mark path:first-child {
@@ -189,25 +189,54 @@ rt {
 }
 
 .brand__text {
-  font-size: 18px;
+  font-size: 17px;
   white-space: nowrap;
 }
 
 .nav {
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 16px;
+  gap: 7px;
+  font-size: 15px;
   font-weight: 900;
 }
 
 .nav a {
-  min-height: 40px;
+  min-height: 32px;
   display: inline-flex;
   align-items: center;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: var(--radius);
   text-decoration: none;
+}
+
+.nav__home {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  justify-content: center;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background: var(--forest);
+  color: white;
+}
+
+.nav__home svg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav__home path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav__about {
+  margin-left: auto;
 }
 
 .nav a[aria-current="page"],
@@ -216,6 +245,13 @@ rt {
   outline: none;
   background: #dff8f2;
   color: var(--forest-dark);
+}
+
+.nav__home[aria-current="page"],
+.nav__home:hover,
+.nav__home:focus-visible {
+  background: var(--forest-dark) !important;
+  color: white !important;
 }
 
 main {
@@ -240,7 +276,7 @@ main {
 }
 
 .hero {
-  min-height: calc(100vh - 74px);
+  min-height: calc(100vh - 54px);
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -1080,23 +1116,37 @@ h3 {
 
   .site-header__inner {
     min-height: auto;
-    padding: 10px 0;
-    align-items: flex-start;
-    flex-direction: column;
+    padding: 6px 0;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px 8px;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .brand__text {
     white-space: normal;
+    font-size: 15px;
   }
 
   .nav {
+    flex: 1 0 100%;
     width: 100%;
-    overflow-x: auto;
-    padding-bottom: 2px;
+    overflow-x: visible;
+    padding-bottom: 0;
+    gap: 5px;
   }
 
   .nav a {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
+  }
+
+  .nav__about {
+    margin-left: auto;
   }
 
   .hero {
@@ -1175,16 +1225,34 @@ h3 {
   }
 
   .nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     overflow-x: visible;
-    gap: 6px;
+    gap: 5px;
   }
 
   .nav a {
-    flex: 1 1 calc(50% - 6px);
+    flex: 0 1 auto;
     justify-content: center;
-    padding-inline: 8px;
-    font-size: 14px;
+    min-height: 30px;
+    padding-inline: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .nav__home {
+    width: 34px;
+    height: 34px;
+    min-height: 34px !important;
+    flex: 0 0 34px !important;
+  }
+
+  .nav__home svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .nav__about {
+    margin-left: auto;
   }
 
   .home-card,
