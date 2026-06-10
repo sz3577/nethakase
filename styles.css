@@ -640,6 +640,13 @@ h3 {
   gap: 8px;
 }
 
+.story-card__learn {
+  padding-top: 4px;
+  border-top: 1px solid #e5e7eb;
+  color: var(--forest-dark) !important;
+  font-weight: 900;
+}
+
 .story-meta {
   display: flex;
   flex-wrap: wrap;
@@ -804,6 +811,21 @@ h3 {
 
 .lesson-box {
   border-left: 8px solid var(--forest);
+}
+
+.talk-box {
+  border-left-color: #d97706;
+}
+
+.talk-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.talk-list li {
+  padding-left: 2px;
 }
 
 .parent-box {
