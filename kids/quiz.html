@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ネットはかせのちょうせんじょう | ネットはかせの秘密基地</title>
+    <meta
+      name="description"
+      content="ネットはかせの秘密基地のクイズコーナー。第1話を読んだあとに、あやしい画面を見たときの行動を楽しくたしかめられます。"
+    />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="canonical" href="https://nethakase.com/kids/quiz.html" />
+    <link rel="stylesheet" href="../styles.css?v=readable-8" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へすすむ</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="../index.html" aria-label="ネットはかせの秘密基地 ホームへ">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48">
+              <circle class="hakase-face" cx="24" cy="27" r="13" />
+              <path class="hakase-hair" d="M13 25c1.8-7.5 6.2-11 11-11s9.2 3.5 11 11c-3.5-2-7.2-3-11-3s-7.5 1-11 3Z" />
+              <path class="hakase-hat" d="M11 15 24 8l13 7-13 7-13-7Z" />
+              <path class="hakase-hat-band" d="M17 18v5c2 1.8 4.4 2.8 7 2.8s5-1 7-2.8v-5" />
+              <circle class="hakase-eye" cx="19" cy="28" r="1.9" />
+              <circle class="hakase-eye" cx="29" cy="28" r="1.9" />
+              <path class="hakase-glasses" d="M16 28h6m4 0h6m-10 0h4" />
+              <path class="hakase-smile" d="M20 34c2.3 1.8 5.7 1.8 8 0" />
+              <circle class="hakase-dot" cx="38" cy="14" r="2" />
+            </svg>
+          </span>
+          <span class="brand__text">ネットはかせの秘密基地</span>
+        </a>
+        <nav class="nav" aria-label="サイトメニュー">
+          <a class="nav__home" href="../index.html" aria-label="ホーム">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 11.5 12 5l8 6.5" />
+              <path d="M6.5 10.5V19h11v-8.5" />
+              <path d="M10 19v-5h4v5" />
+            </svg>
+          </a>
+          <a href="index.html" aria-current="page">こどもはこちら</a>
+          <a href="../parents/index.html">おとなはこちら</a>
+          <a class="nav__about" href="../about.html">サイトについて</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="narrow page-hero__grid">
+          <div>
+            <p class="eyebrow">第1話のあとに</p>
+            <h1>ネットはかせのちょうせんじょう</h1>
+            <p class="lead">
+              はやとといっしょに、あやしい画面を見たときの行動を選んでみよう。
+              3問ぜんぶ終わると、ネットはかせからひとこともらえます。
+            </p>
+          </div>
+          <img class="page-hero__hakase" src="../assets/hakase-glass-a.webp" alt="むしめがねを持つネットはかせ" width="150" height="135" />
+        </div>
+      </section>
+
+      <section class="quiz-corner shell" data-quiz-corner>
+        <div class="quiz-progress" aria-live="polite">
+          <span data-quiz-progress>1 / 3</span>
+        </div>
+
+        <section class="quiz-card is-active" data-quiz-step>
+          <p class="eyebrow">ちょうせん 1</p>
+          <h2>「無料ダイヤ10000個！」と出た。まずどうする？</h2>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false">すぐに「もらう」を押す</button>
+            <button class="quiz-option" type="button" data-correct="true">押す前に、画面をよく見る</button>
+            <button class="quiz-option" type="button" data-correct="false">急いで名前を入れる</button>
+          </div>
+          <p class="quiz-result" data-result aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-card" data-quiz-step hidden>
+          <p class="eyebrow">ちょうせん 2</p>
+          <h2>名前と誕生日を入れて、と書いてある。どうする？</h2>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false">名前だけなら入れてみる</button>
+            <button class="quiz-option" type="button" data-correct="false">誕生日を少し変えて入れる</button>
+            <button class="quiz-option" type="button" data-correct="true">入力せず、おうちの人に見せる</button>
+          </div>
+          <p class="quiz-result" data-result aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-card" data-quiz-step hidden>
+          <p class="eyebrow">ちょうせん 3</p>
+          <h2>友だちが「本物かもよ」と言った。どうする？</h2>
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false">友だちが言うなら押す</button>
+            <button class="quiz-option" type="button" data-correct="true">友だちにも押さないように伝えて、大人に見せる</button>
+            <button class="quiz-option" type="button" data-correct="false">友だちの名前でためす</button>
+          </div>
+          <p class="quiz-result" data-result aria-live="polite"></p>
+        </section>
+
+        <section class="quiz-complete" data-quiz-complete hidden>
+          <img src="../assets/hakase-good.webp" alt="よろこぶネットはかせ" width="120" height="108" />
+          <p class="eyebrow">クリア</p>
+          <h2>はやとのまもり力、アップ！</h2>
+          <p>
+            「ほしい！」と思っても、押す前に止まれたら大成功。
+            まよったら、画面をそのまま大人に見せよう。
+          </p>
+          <div class="stamp-unlock" data-stamp-unlock data-stamp-id="story-01">
+            <div class="stamp-card__seal stamp-card__seal--earned" aria-hidden="true">合格</div>
+            <div>
+              <p class="eyebrow">スタンプをゲット</p>
+              <h3>あやしいリンクを見ぬくスタンプ</h3>
+              <div class="power-meter" aria-label="はやとのまもり力">
+                <span>はやとのまもり力</span>
+                <strong data-guard-level>Lv.1</strong>
+                <div class="power-meter__bar" aria-hidden="true">
+                  <span data-guard-bar></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="button button--light" href="story-01.html">第1話にもどる</a>
+            <a class="button button--primary" href="story-02.html">つぎの話へすすむ</a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>ネットはかせの秘密基地</p>
+      <p>まよったら、すぐおとな。</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

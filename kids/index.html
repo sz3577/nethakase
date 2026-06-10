@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
@@ -6,11 +6,11 @@
     <title>こども向けのお話 | ネットはかせの秘密基地</title>
     <meta
       name="description"
-      content="小学生向けのネット安全のお話一覧。あやしいリンク、パスワード、知らない人からのメッセージについて会話形式で学べます。"
+      content="小学生向けのネット安全のお話一覧。あやしいリンク、パスワード、写真、ことば、AI、家庭のルールまで、全10話を会話形式で学べます。"
     />
     <meta name="theme-color" content="#0f766e" />
-    <link rel="canonical" href="https://sz3577.github.io/nethakase/kids/" />
-    <link rel="stylesheet" href="../styles.css?v=readable-6" />
+    <link rel="canonical" href="https://nethakase.com/kids/" />
+    <link rel="stylesheet" href="../styles.css?v=readable-8" />
   </head>
   <body>
     <a class="skip-link" href="#main">本文へすすむ</a>
@@ -50,13 +50,32 @@
 
     <main id="main">
       <section class="page-hero">
-        <div class="narrow">
-          <p class="eyebrow">こども向け</p>
-          <h1>ネットはかせのお話</h1>
-          <p class="lead">
-            お話を読んで、ネットでまよいやすい場面をいっしょに考えよう。
-            読み終わったら、クイズでネットはかせのポイントをたしかめられます。
-          </p>
+        <div class="narrow page-hero__grid">
+          <div>
+            <p class="eyebrow">こども向け</p>
+            <h1>ネットはかせのお話</h1>
+            <p class="lead">
+              お話を読んで、ネットでまよいやすい場面をいっしょに考えよう。
+              クイズをクリアすると、スタンプ帳に合格スタンプがふえていきます。
+            </p>
+          </div>
+          <img class="page-hero__hakase" src="../assets/hakase-glass-b.webp" alt="むしめがねをのぞくネットはかせ" width="150" height="142" />
+        </div>
+      </section>
+
+      <section class="stamp-overview-section" aria-labelledby="stamp-overview-title">
+        <div class="shell">
+          <div class="stamp-progress stamp-progress--wide" data-stamp-board>
+            <div class="stamp-progress__head">
+              <div>
+                <p class="eyebrow">はやとのスタンプ帳</p>
+                <h2 id="stamp-overview-title">合格スタンプ <span data-stamp-count>0 / 10</span>こ</h2>
+              </div>
+              <span class="stamp-progress__badge">クリックでお話へ</span>
+            </div>
+            <div class="stamp-grid stamp-grid--wide" data-stamp-slots aria-label="お話のスタンプ一覧"></div>
+            <p class="stamp-progress__note">スタンプはこのブラウザだけに保存されます。名前などは保存しません。</p>
+          </div>
         </div>
       </section>
 
@@ -65,33 +84,140 @@
           <a class="story-card story-card--text" href="story-01.html">
             <span class="story-card__body">
               <span class="story-meta">
-                <span class="card-tag">学べること</span>
+                <span class="card-tag">第1話</span>
+                <span class="card-tag card-tag--cat">あやしいリンク</span>
               </span>
-              <strong>第1話 無料ダイヤ10000個！？</strong>
-              <span>名前や誕生日を入れてしまいそうな、あやしいゲーム画面を見分けます。</span>
-              <span class="story-card__learn">うますぎる話を見たときに、すぐ押さずに立ち止まること</span>
+              <strong>無料ダイヤ10000個！？</strong>
+              <span>「無料でもらえる」というあやしいゲーム画面に出会ったはやと。押す前にどこを見ればいいかを考えます。</span>
+              <span class="story-card__learn">学べること：うますぎる話を見たら、押す前に立ち止まること</span>
+              <span class="story-card__parent">おうちの人向け：詐欺広告・フィッシングへの基本対策</span>
+              <span class="story-card__read">読んでみる</span>
             </span>
           </a>
 
           <a class="story-card story-card--text" href="story-02.html">
             <span class="story-card__body">
               <span class="story-meta">
-                <span class="card-tag">学べること</span>
+                <span class="card-tag">第2話</span>
+                <span class="card-tag card-tag--cat">パスワード</span>
               </span>
-              <strong>第2話 パスワード、教えてくれる？</strong>
-              <span>ゲームの友だちにパスワードを聞かれたとき、どうすればよいかを考えます。</span>
-              <span class="story-card__learn">パスワードを人に教えず、自分のアカウントを守ること</span>
+              <strong>パスワード、教えてくれる？</strong>
+              <span>ゲームの友だちにパスワードを聞かれたみお。ことわり方と相談のしかたを考えます。</span>
+              <span class="story-card__learn">学べること：パスワードを人に教えず、自分のアカウントを守ること</span>
+              <span class="story-card__parent">おうちの人向け：アカウントを守る基本習慣</span>
+              <span class="story-card__read">読んでみる</span>
             </span>
           </a>
 
           <a class="story-card story-card--text" href="story-03.html">
             <span class="story-card__body">
               <span class="story-meta">
-                <span class="card-tag">学べること</span>
+                <span class="card-tag">第3話</span>
+                <span class="card-tag card-tag--cat">知らない人</span>
               </span>
-              <strong>第3話 知らない人からメッセージがきた</strong>
-              <span>学校名や写真を聞かれたとき、返事をする前に相談することを学びます。</span>
-              <span class="story-card__learn">知らない人からの連絡に、ひとりで返事をしないこと</span>
+              <strong>知らない人からメッセージがきた</strong>
+              <span>学校名を聞かれたそうた。返事をする前にできることを考えます。</span>
+              <span class="story-card__learn">学べること：知らない人からの連絡に、ひとりで返事をしないこと</span>
+              <span class="story-card__parent">おうちの人向け：オンライン上の人間関係と距離感を学ぶ</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-04.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第4話</span>
+                <span class="card-tag card-tag--cat">写真・個人情報</span>
+              </span>
+              <strong>その写真、アップしてもだいじょうぶ？</strong>
+              <span>写真を送ろうとしたりな。写真にうつる「思わぬ手がかり」に気づいて、送る前のチェックを身につけます。</span>
+              <span class="story-card__learn">学べること：写真にうつる情報を、送る前にたしかめること</span>
+              <span class="story-card__parent">おうちの人向け：個人情報と写真投稿のリスクを親子で考える</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-05.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第5話</span>
+                <span class="card-tag card-tag--cat">ことば</span>
+              </span>
+              <strong>そのメッセージ、送る前に一回ストップ！</strong>
+              <span>グループチャットでイラッとしたりく。強いことばを送る前にできることを考えます。</span>
+              <span class="story-card__learn">学べること：送る前に読み返して、相手の気持ちを考えること</span>
+              <span class="story-card__parent">おうちの人向け：SNS・チャットでの言葉のトラブルを防ぐ</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-06.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第6話</span>
+                <span class="card-tag card-tag--cat">情報の見分け方</span>
+              </span>
+              <strong>ネットの「ほんとう」と「うそ」を見ぬけ！</strong>
+              <span>「ゲームが無料になる」といううわさを見たはやと。本当かどうかをたしかめる方法を学びます。</span>
+              <span class="story-card__learn">学べること：すぐ信じず、「だれが言っているか」をたしかめること</span>
+              <span class="story-card__parent">おうちの人向け：情報をうのみにしない力を育てる</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-07.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第7話</span>
+                <span class="card-tag card-tag--cat">時間の使い方</span>
+              </span>
+              <strong>動画を見すぎると、時間が消える！？</strong>
+              <span>「あと1本だけ」が止まらないゆい。楽しい時間と生活リズムの両方を大切にする方法を考えます。</span>
+              <span class="story-card__learn">学べること：始める前に、終わる時間を決めること</span>
+              <span class="story-card__parent">おうちの人向け：スクリーンタイムと生活リズムを整える</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-08.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第8話</span>
+                <span class="card-tag card-tag--cat">AI</span>
+              </span>
+              <strong>AIの答えはぜんぶ正しいの？</strong>
+              <span>宿題でAIを使ってみたはな。便利だけれど、答えをそのまま信じていいのかを考えます。</span>
+              <span class="story-card__learn">学べること：AIの答えも、ほかの方法でたしかめること</span>
+              <span class="story-card__parent">おうちの人向け：AI時代の情報リテラシーを親子で学ぶ</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-09.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第9話</span>
+                <span class="card-tag card-tag--cat">相談</span>
+              </span>
+              <strong>ネットでイヤなことがあったらどうする？</strong>
+              <span>チャットでいやなことばを言われたそうま。ひとりでかかえない方法を学びます。</span>
+              <span class="story-card__learn">学べること：イヤなことがあったら、画面を残して相談すること</span>
+              <span class="story-card__parent">おうちの人向け：トラブル時に相談できる家庭環境を作る</span>
+              <span class="story-card__read">読んでみる</span>
+            </span>
+          </a>
+
+          <a class="story-card story-card--text" href="story-10.html">
+            <span class="story-card__body">
+              <span class="story-meta">
+                <span class="card-tag">第10話</span>
+                <span class="card-tag card-tag--cat">家庭ルール</span>
+              </span>
+              <strong>わが家のネットルール作戦会議！</strong>
+              <span>学んだことをぜんぶ使って、家族でネットの約束を考える最後のお話です。</span>
+              <span class="story-card__learn">学べること：家族で話し合って、納得できるルールを作ること</span>
+              <span class="story-card__parent">おうちの人向け：親子で納得できるネットルールを作る</span>
+              <span class="story-card__read">読んでみる</span>
             </span>
           </a>
         </div>
@@ -102,5 +228,7 @@
       <p>ネットはかせの秘密基地</p>
       <p>まよったら、すぐおとな。</p>
     </footer>
+
+    <script src="../script.js"></script>
   </body>
 </html>

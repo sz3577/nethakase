@@ -828,6 +828,22 @@ h3 {
   padding-left: 2px;
 }
 
+.point-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.point-list li {
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  background: #ecfdf5;
+  color: var(--forest-dark);
+  font-weight: 900;
+}
+
 .parent-box {
   border-left: 8px solid var(--blue);
 }
@@ -1646,5 +1662,801 @@ h3 {
 
   body {
     font-size: 17px;
+  }
+}
+
+/* Mission box, parent details, story navigation. */
+.mission-box {
+  border-left-color: var(--leaf);
+}
+
+.hakase-note {
+  border-left-color: #ca8a04;
+}
+
+.lesson-box--with-hakase {
+  position: relative;
+  overflow: hidden;
+  padding-right: 120px;
+}
+
+.hakase-point__img {
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  width: 88px;
+  height: auto;
+}
+
+.parent-details {
+  margin-top: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  background: #f8fafc;
+}
+
+.parent-details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+  list-style: none;
+  color: #1e3a8a;
+  font-weight: 900;
+}
+
+.parent-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.parent-details summary::after {
+  content: "ひらく";
+  min-width: 62px;
+  padding: 4px 10px;
+  border: 1px solid rgba(30, 58, 138, 0.25);
+  border-radius: 999px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.parent-details[open] summary::after {
+  content: "とじる";
+}
+
+.parent-details__inner {
+  display: grid;
+  gap: 14px;
+  padding: 2px 16px 16px;
+}
+
+.parent-details__inner h3 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 18px;
+}
+
+.parent-details__inner ul {
+  display: grid;
+  gap: 6px;
+  margin: 6px 0 0;
+  padding-left: 1.2em;
+}
+
+.story-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.story-nav .button {
+  width: auto;
+  flex: 1 1 220px;
+  justify-content: center;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 60;
+  width: 48px;
+  height: 48px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(15, 118, 110, 0.3);
+  border-radius: 999px;
+  background: var(--forest);
+  color: white;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.25);
+}
+
+.back-to-top.is-visible {
+  display: inline-flex;
+}
+
+/* Story list cards. */
+.card-tag--cat {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.story-card__parent {
+  color: #1d4ed8 !important;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.story-card__read {
+  width: fit-content;
+  margin-top: 4px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--forest);
+  color: white !important;
+  font-weight: 900;
+}
+
+/* Home page sections. */
+.catchcopy {
+  margin: 0 0 10px;
+  color: var(--forest-dark);
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.steps {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.steps li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+  counter-increment: step;
+}
+
+.steps li::before {
+  content: counter(step);
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--forest);
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.steps strong {
+  display: block;
+  font-size: 19px;
+}
+
+.steps span {
+  color: #1f2937;
+}
+
+.home-note {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-left: 8px solid #ca8a04;
+  border-radius: var(--radius);
+  background: white;
+}
+
+.home-note p {
+  margin: 0;
+}
+
+.home-note p + p {
+  margin-top: 6px;
+}
+
+.home-note__img {
+  width: 96px;
+  height: auto;
+}
+
+/* Hakase character images. */
+.home-intro--hakase {
+  display: grid;
+  grid-template-columns: 1fr 190px;
+  gap: 24px;
+  align-items: center;
+}
+
+.home-intro__hakase {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  justify-self: center;
+}
+
+.page-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 16px;
+  align-items: center;
+}
+
+.page-hero__hakase {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  justify-self: center;
+}
+
+.quiz-hakase {
+  width: 96px;
+  height: auto;
+  display: block;
+  margin: 4px auto 0;
+}
+
+.quiz-invite {
+  border-left: 8px solid #ca8a04;
+}
+
+.quiz-invite .button {
+  width: fit-content;
+}
+
+.quiz-corner {
+  width: min(760px, calc(100% - 32px));
+  display: grid;
+  gap: 16px;
+  padding-bottom: 64px;
+}
+
+.quiz-progress {
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #dff8f2;
+  color: var(--forest-dark);
+  font-weight: 900;
+}
+
+.quiz-card,
+.quiz-complete {
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-left: 8px solid var(--forest);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.quiz-card[hidden],
+.quiz-complete[hidden] {
+  display: none;
+}
+
+.quiz-card h2,
+.quiz-complete h2 {
+  font-size: 26px;
+}
+
+.quiz-complete {
+  text-align: center;
+}
+
+.quiz-complete img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.quiz-complete .actions {
+  justify-content: center;
+}
+
+.stamp-card,
+.stamp-unlock {
+  border: 1px solid #e5e7eb;
+  border-left: 8px solid #ca8a04;
+  border-radius: var(--radius);
+  background: #fffdf5;
+}
+
+.stamp-card {
+  padding: 20px;
+}
+
+.stamp-card__body,
+.stamp-unlock {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.stamp-card h2,
+.stamp-unlock h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 24px;
+}
+
+.stamp-card p,
+.stamp-unlock p {
+  margin: 8px 0 0;
+}
+
+.stamp-card__seal {
+  width: 78px;
+  height: 78px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fbbf24;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.stamp-card__seal--earned {
+  border-color: var(--forest);
+  background: #dff8f2;
+  color: var(--forest-dark);
+}
+
+.stamp-card__note {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+.stamp-unlock {
+  margin: 18px 0;
+  padding: 18px;
+  text-align: left;
+}
+
+.power-meter {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 12px;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--forest-dark);
+  font-weight: 900;
+}
+
+.power-meter__bar {
+  grid-column: 1 / -1;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.power-meter__bar span {
+  width: 10%;
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--forest), #ca8a04);
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 620px) {
+  .home-intro--hakase {
+    grid-template-columns: 1fr;
+  }
+
+  .home-intro__hakase {
+    max-width: 132px;
+  }
+
+  .page-hero__grid {
+    grid-template-columns: 1fr 104px;
+  }
+
+  .home-note {
+    grid-template-columns: 72px 1fr;
+    gap: 12px;
+  }
+
+  .home-note__img {
+    width: 72px;
+  }
+
+  .quiz-invite .button {
+    width: 100%;
+  }
+
+  .quiz-corner {
+    width: min(100% - 20px, 760px);
+    padding-bottom: 44px;
+  }
+
+  .quiz-card,
+  .quiz-complete {
+    padding: 16px;
+  }
+
+  .quiz-card h2,
+  .quiz-complete h2 {
+    font-size: 23px;
+  }
+
+  .stamp-card {
+    padding: 16px;
+  }
+
+  .stamp-card__body,
+  .stamp-unlock {
+    grid-template-columns: 66px 1fr;
+    gap: 12px;
+  }
+
+  .stamp-card__seal {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .stamp-card h2,
+  .stamp-unlock h3 {
+    font-size: 20px;
+  }
+
+  .stamp-card__note {
+    font-size: 14px;
+  }
+
+  .lesson-box--with-hakase {
+    padding-right: 16px;
+  }
+
+  .hakase-point__img {
+    position: static;
+    width: 72px;
+    margin: 8px 0 0 auto;
+  }
+}
+
+/* Character dialogue pass. */
+.story-page .dialogue {
+  gap: 20px;
+  padding: 6px 0;
+}
+
+.story-page .chat {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.story-page .chat--teacher {
+  flex-direction: row-reverse;
+}
+
+.story-page .chat__avatar {
+  width: 72px;
+  flex: 0 0 72px;
+  min-height: 0;
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--forest-dark);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.story-page .chat__avatar::before {
+  content: "";
+  width: 54px;
+  height: 54px;
+  display: block;
+  border: 2px solid rgba(15, 118, 110, 0.22);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 38% 42%, #111827 0 3px, transparent 3.5px),
+    radial-gradient(circle at 62% 42%, #111827 0 3px, transparent 3.5px),
+    radial-gradient(circle at 50% 62%, transparent 0 8px, #111827 8.5px 10px, transparent 10.5px),
+    linear-gradient(#ecfdf5, #ccfbf1);
+  box-shadow: 0 8px 18px rgba(15, 118, 110, 0.14);
+}
+
+.story-page .chat--teacher .chat__avatar {
+  color: #92400e;
+}
+
+.story-page .chat--teacher .chat__avatar::before {
+  border-color: rgba(202, 138, 4, 0.28);
+  background:
+    #fef3c7 url("assets/hakase-smile.webp") center bottom / 52px auto no-repeat;
+}
+
+.story-page .chat__bubble {
+  position: relative;
+  max-width: min(540px, calc(100% - 86px));
+  margin-top: 0;
+  padding: 16px 18px;
+  border: 1px solid #d1fae5;
+  border-radius: 18px 18px 18px 6px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.08);
+}
+
+.story-page .chat__bubble::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  bottom: 18px;
+  width: 13px;
+  height: 13px;
+  border-left: 1px solid #d1fae5;
+  border-bottom: 1px solid #d1fae5;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+.story-page .chat--teacher .chat__bubble {
+  border-color: #fde68a;
+  border-radius: 18px 18px 6px 18px;
+  background: #fffbeb;
+}
+
+.story-page .chat--teacher .chat__bubble::before {
+  right: -7px;
+  left: auto;
+  border: 0;
+  border-top: 1px solid #fde68a;
+  border-right: 1px solid #fde68a;
+  background: #fffbeb;
+}
+
+.story-page .chat__name {
+  margin-bottom: 5px;
+  color: var(--forest-dark);
+}
+
+.story-page .chat--teacher .chat__name {
+  color: #92400e;
+}
+
+@media (max-width: 620px) {
+  .story-page .dialogue {
+    gap: 18px;
+  }
+
+  .story-page .chat {
+    gap: 8px;
+  }
+
+  .story-page .chat__avatar {
+    width: 58px;
+    flex-basis: 58px;
+    font-size: 12px;
+  }
+
+  .story-page .chat__avatar::before {
+    width: 46px;
+    height: 46px;
+  }
+
+  .story-page .chat--teacher .chat__avatar::before {
+    background-size: 45px auto;
+  }
+
+  .story-page .chat__bubble {
+    max-width: calc(100% - 68px);
+    padding: 14px;
+    border-radius: 16px 16px 16px 6px;
+  }
+
+  .story-page .chat--teacher .chat__bubble {
+    border-radius: 16px 16px 6px 16px;
+  }
+}
+
+/* Cleaner first story flow and stamp progress. */
+.story-scene-card {
+  display: grid;
+  gap: 22px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-left: 8px solid var(--forest);
+  border-radius: var(--radius);
+  background: white;
+}
+
+.story-scene-card .warning-scenario {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.story-scene-card .dialogue,
+.story-scene-card .story-note {
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.story-note h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.challenge-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 22px;
+  align-items: start;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-left: 8px solid #ca8a04;
+  border-radius: var(--radius);
+  background: #fffdf5;
+}
+
+.challenge-panel h2 {
+  margin: 0 0 8px;
+  font-size: 25px;
+}
+
+.challenge-panel .button {
+  width: fit-content;
+}
+
+.stamp-overview-section {
+  padding: 0 0 28px;
+  background: var(--paper);
+}
+
+.stamp-progress--wide {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-left: 8px solid #ca8a04;
+  border-radius: var(--radius);
+  background: #fffdf5;
+}
+
+.stamp-progress__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.stamp-progress__head h2,
+.stamp-progress__head strong {
+  display: block;
+  margin: 0;
+  color: #111827;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.stamp-progress__badge {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(42px, 1fr));
+  gap: 8px;
+}
+
+.stamp-grid--wide {
+  grid-template-columns: repeat(10, minmax(46px, 1fr));
+}
+
+.stamp-slot {
+  min-height: 54px;
+  display: grid;
+  place-items: center;
+  gap: 2px;
+  padding: 8px 4px;
+  border: 2px dashed #fbbf24;
+  border-radius: 14px;
+  background: #fffbeb;
+  color: #92400e;
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.stamp-slot:hover,
+.stamp-slot:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--forest);
+  outline: none;
+}
+
+.stamp-slot.is-earned {
+  border-style: solid;
+  border-color: var(--forest);
+  background: #dff8f2;
+  color: var(--forest-dark);
+}
+
+.stamp-slot__number {
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.stamp-slot__state {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.stamp-progress__note {
+  margin: 12px 0 0;
+  color: #4b5563;
+  font-size: 15px;
+}
+
+@media (max-width: 760px) {
+  .challenge-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .challenge-panel .button {
+    width: 100%;
+  }
+
+  .stamp-grid--wide {
+    grid-template-columns: repeat(5, minmax(42px, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .story-scene-card,
+  .challenge-panel,
+  .stamp-progress--wide {
+    padding: 16px;
+  }
+
+  .story-note h2,
+  .challenge-panel h2,
+  .stamp-progress__head h2,
+  .stamp-progress__head strong {
+    font-size: 21px;
+  }
+
+  .stamp-progress__head {
+    display: grid;
   }
 }
