@@ -2190,14 +2190,62 @@ h3 {
   box-shadow: 0 8px 18px rgba(15, 118, 110, 0.14);
 }
 
+.story-page .chat--hayato .chat__avatar::before {
+  border-color: rgba(15, 118, 110, 0.22);
+  background-color: #ecfdf5;
+  background-image: var(--hayato-avatar, url("assets/hayato-normal.webp"));
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: var(--hayato-avatar-size, 52px auto);
+}
+
+.story-page .chat--hayato-excited {
+  --hayato-avatar: url("assets/hayato-excited.webp");
+}
+
+.story-page .chat--hayato-unsure {
+  --hayato-avatar: url("assets/hayato-unsure.webp");
+}
+
+.story-page .chat--hayato-noticed {
+  --hayato-avatar: url("assets/hayato-noticed.webp");
+}
+
+.story-page .chat--hayato-relieved {
+  --hayato-avatar: url("assets/hayato-relieved.webp");
+}
+
+.story-page .chat--hayato-down {
+  --hayato-avatar: url("assets/hayato-down.webp");
+}
+
+.story-page .chat--hayato-clear {
+  --hayato-avatar: url("assets/hayato-clear.webp");
+}
+
 .story-page .chat--teacher .chat__avatar {
   color: #92400e;
 }
 
 .story-page .chat--teacher .chat__avatar::before {
   border-color: rgba(202, 138, 4, 0.28);
-  background:
-    #fef3c7 url("assets/hakase-smile.webp") center bottom / 52px auto no-repeat;
+  background-color: #fef3c7;
+  background-image: var(--hakase-avatar, url("assets/hakase-smile.webp"));
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: var(--hakase-avatar-size, 52px auto);
+}
+
+.story-page .chat--hakase-thinking {
+  --hakase-avatar: url("assets/hakase-thinking.webp");
+}
+
+.story-page .chat--hakase-secret {
+  --hakase-avatar: url("assets/hakase-secret.webp");
+}
+
+.story-page .chat--hakase-good {
+  --hakase-avatar: url("assets/hakase-good.webp");
 }
 
 .story-page .chat__bubble {
@@ -2286,12 +2334,23 @@ h3 {
 /* Cleaner first story flow and stamp progress. */
 .story-scene-card {
   display: grid;
-  gap: 22px;
+  gap: 18px;
   padding: 24px;
   border: 1px solid var(--line);
   border-left: 8px solid var(--forest);
   border-radius: var(--radius);
   background: white;
+}
+
+.story-hero__grid {
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 270px);
+}
+
+.story-hero__image {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  justify-self: center;
 }
 
 .story-scene-card .warning-scenario {
@@ -2300,10 +2359,16 @@ h3 {
   background: transparent;
 }
 
-.story-scene-card .dialogue,
+.story-scene-card .dialogue {
+  padding-top: 4px;
+}
+
 .story-scene-card .story-note {
-  padding-top: 20px;
-  border-top: 1px solid #e5e7eb;
+  padding: 18px;
+  border: 1px solid #bbf7d0;
+  border-left: 6px solid var(--forest);
+  border-radius: 16px;
+  background: #f0fdf4;
 }
 
 .story-note h2 {
@@ -2443,6 +2508,14 @@ h3 {
 }
 
 @media (max-width: 620px) {
+  .story-hero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-hero__image {
+    max-width: 230px;
+  }
+
   .story-scene-card,
   .challenge-panel,
   .stamp-progress--wide {

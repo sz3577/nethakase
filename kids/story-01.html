@@ -50,13 +50,22 @@
 
     <main id="main">
       <section class="page-hero">
-        <div class="narrow">
-          <p class="eyebrow">第1話</p>
-          <h1>無料ダイヤ10000個！？</h1>
-          <p class="lead">
-            ゲームをしていたはやとに、すごく気になる画面が出てきました。
-            でも、押す前にちょっとだけ立ち止まります。
-          </p>
+        <div class="narrow page-hero__grid story-hero__grid">
+          <div>
+            <p class="eyebrow">第1話</p>
+            <h1>無料ダイヤ10000個！？</h1>
+            <p class="lead">
+              ゲーム中のはやとの前に、きらっとしたプレゼント画面が出てきました。
+              「ほしい！」と手が動きそうになったとき、はやとはどうするでしょう。
+            </p>
+          </div>
+          <img
+            class="story-hero__image"
+            src="../assets/hakase-hayato-point.webp"
+            alt="ネットはかせとはやと"
+            width="300"
+            height="200"
+          />
         </div>
       </section>
 
@@ -71,90 +80,84 @@
               <p>たんじょうびをいれてね</p>
               <p class="fake-screen-text__button">もらう</p>
             </div>
-            <p class="danger-callout">「もらう」を押す前にストップ。名前や誕生日も入れません。</p>
+            <p class="danger-callout">名前や誕生日を入れる前に、画面を見せよう。</p>
           </div>
 
           <div class="dialogue" aria-label="会話形式のお話">
-            <div class="chat">
+            <div class="chat chat--hayato chat--hayato-excited">
               <div class="chat__avatar">はやと</div>
               <div class="chat__bubble">
                 <span class="chat__name">はやと</span>
                 えっ、ダイヤ10000個！？
-                これ本当だったら、めちゃくちゃうれしい！
+                すごい、心がバクバクする！
               </div>
             </div>
 
-            <div class="chat chat--teacher">
+            <div class="chat chat--teacher chat--hakase-thinking">
               <div class="chat__avatar">ネット<br />はかせ</div>
               <div class="chat__bubble">
                 <span class="chat__name">ネットはかせ</span>
-                その気持ち、わかるぞ。
-                でも、押す前に画面をよく見てみよう。
+                そのワクワク、わかるぞ。
+                でも、押す前に一回だけ画面を見よう。
               </div>
             </div>
 
-            <div class="chat">
+            <div class="chat chat--hayato chat--hayato-unsure">
               <div class="chat__avatar">はやと</div>
               <div class="chat__bubble">
                 <span class="chat__name">はやと</span>
-                名前と誕生日を入れてって書いてある。
-                名前くらいなら、いいのかな。
+                え、名前と誕生日？
+                なんか、ちょっとドキッとした。
               </div>
             </div>
 
-            <div class="chat chat--teacher">
+            <div class="chat chat--teacher chat--hakase-secret">
               <div class="chat__avatar">ネット<br />はかせ</div>
               <div class="chat__bubble">
                 <span class="chat__name">ネットはかせ</span>
-                名前と誕生日だけでも、だれなのかを探すヒントになることがあるんだ。
-                すぐ入れないで、止まれたのがいいね。
+                そのドキッ、大事な合図じゃ。
+                名前や誕生日は、自分につながる大事なヒントなんだ。
               </div>
             </div>
 
-            <div class="chat">
+            <div class="chat chat--hayato chat--hayato-noticed">
               <div class="chat__avatar">はやと</div>
               <div class="chat__bubble">
                 <span class="chat__name">はやと</span>
-                うーん、ほしいけど……。
-                じゃあ「もらう」は押さない。
+                ほしいけど、今は押さない。
+                この画面、おうちの人に見せる！
               </div>
             </div>
 
-            <div class="chat chat--teacher">
+            <div class="chat chat--teacher chat--hakase-good">
               <div class="chat__avatar">ネット<br />はかせ</div>
               <div class="chat__bubble">
                 <span class="chat__name">ネットはかせ</span>
-                そのままおうちの人に見せよう。
-                相談できたら、それだけで大きな一歩だよ。
+                すばらしい。
+                気づいて相談できたら、はやとのまもり力アップじゃ。
               </div>
             </div>
           </div>
 
           <div class="story-note">
-            <p class="eyebrow">ネットはかせのポイント</p>
-            <h2>「ほしい！」と思ったら、一回止まる</h2>
+            <p class="eyebrow">さいごにひとつだけ</p>
+            <h2>ドキッとしたら、画面を見せる</h2>
             <p>
               「無料」「今だけ」と書いてあると、すぐ押したくなります。
-              でも、名前や誕生日を聞かれたらストップ。
-              本物か分からない画面は、そのまま大人に見せましょう。
+              名前や誕生日を聞かれたら、画面をそのままおうちの人に見せましょう。
             </p>
-            <ul class="point-list">
-              <li>名前や誕生日を入れない</li>
-              <li>「無料」と書いてあってもすぐ押さない</li>
-              <li>まよったら画面を見せる</li>
-            </ul>
           </div>
         </article>
 
         <section class="challenge-panel" aria-labelledby="quiz-title">
           <div>
-            <p class="eyebrow">ネットはかせのちょうせんじょう</p>
-            <h2 id="quiz-title">はやとなら、つぎにどうする？</h2>
+            <p class="eyebrow">はやとのスタンプチャレンジ</p>
+            <h2 id="quiz-title">3つの場面で、はやとを助けよう</h2>
             <p>
-              お話を読んだら、3つの場面で「どうする？」を選んでみよう。
+              「どうする？」を選んで、あやしい画面に気づく練習をしよう。
               クリアすると、第1話のスタンプがつきます。
             </p>
-            <a class="button button--primary" href="quiz.html">クイズにちょうせん</a>
+            <a class="button button--primary" href="quiz.html">スタンプクイズへ</a>
           </div>
 
           <div class="stamp-progress" data-stamp-board>
@@ -166,7 +169,6 @@
               <span class="stamp-progress__badge">第1話</span>
             </div>
             <div class="stamp-grid" data-stamp-slots aria-label="お話のスタンプ一覧"></div>
-            <p class="stamp-progress__note">名前などは保存しません。このブラウザだけの記録です。</p>
           </div>
         </section>
 
@@ -205,7 +207,7 @@
               </div>
             </div>
           </details>
-          <a class="button button--light" href="../parents/phishing.html">親向け記事を読む</a>
+          <a class="button button--light" href="../parents/phishing.html">おうちの人向けの記事を読む</a>
         </section>
 
         <nav class="story-nav" aria-label="お話のナビゲーション">

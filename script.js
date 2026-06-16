@@ -139,7 +139,7 @@ document.querySelectorAll(".story-page .lesson-box").forEach((section) => {
   hakase.alt = "";
   hakase.setAttribute("aria-hidden", "true");
   hakase.width = 88;
-  hakase.height = 79;
+  hakase.height = 88;
   hakase.loading = "lazy";
 
   section.classList.add("lesson-box--with-hakase");
@@ -152,9 +152,9 @@ if (storyBox) {
   const options = [...storyBox.querySelectorAll(".quiz-option")];
   const markRead = storyBox.querySelector("[data-mark-read]");
   const correctMessage =
-    storyBox.dataset.correctMessage || "せいかい。あやしい画面は、大人に見せよう。";
+    storyBox.dataset.correctMessage || "せいかい。あやしい画面は、おうちの人に見せよう。";
   const wrongMessage =
-    storyBox.dataset.wrongMessage || "もう一度見てみよう。押す前に、大人に相談だよ。";
+    storyBox.dataset.wrongMessage || "もう一度見てみよう。押す前に、おうちの人に相談だよ。";
 
   options.forEach((button) => {
     button.addEventListener("click", () => {
@@ -177,6 +177,7 @@ if (storyBox) {
         cheer.src = `${assetBase}hakase-good.webp`;
         cheer.alt = "よろこぶネットはかせ";
         cheer.width = 96;
+        cheer.height = 96;
         result.insertAdjacentElement("afterend", cheer);
       }
 
